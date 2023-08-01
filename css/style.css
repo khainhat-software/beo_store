@@ -1,0 +1,152 @@
+@charset "utf-8";
+.align-item{ align-items: center;}
+.overhidden{ overflow: hidden;}
+.img_banner{
+	width: 100%; 
+	height: 100%;
+}
+.border-bot{
+	width: 100%; height: 1px; border-bottom: 5px dotted whitesmoke;
+}
+
+.navbar .navbar-nav .nav-item .nav-link{
+	padding: 8px 20px; font-size: 17px; font-weight: 600; border-radius: 20px; 
+}
+.navbar .navbar-nav .nav-item .nav-link:hover{
+	color: white; background-color: #F8BBBC;
+}
+.navbar .navbar-nav .nav-item .dropdown-menu{
+	background-color: #F8ABAC; padding-top: 0; padding-bottom: 0; 
+}
+.navbar .navbar-nav .nav-item .dropdown-menu li{
+	border-bottom: 1px dotted #808080; padding: 10px 15px;  transition: all 0.3s; 
+}
+.navbar .navbar-nav .nav-item .dropdown-menu li a{
+	color: white; text-decoration: none;
+}
+.navbar .navbar-nav .nav-item .dropdown-menu li:hover{
+	padding-left: 25px; background-color: #F8BBBC;
+}
+main{
+	width: 100%; min-height: 600px; padding-top: 130px;
+}
+footer .navbar-nav .nav-item .nav-link{
+	padding: 10px; 
+}
+footer .navbar-nav .nav-item .nav-link:hover{
+	color: red
+}
+@media (max-width: 667px){
+	footer{
+		text-align: center;
+	}
+}
+.banner-r{
+	position: relative;
+}
+.cover{
+	position: absolute; width: 90%; height: 90%; color: white; text-align: center; background-color: rgba(0,0,0,0.80); left: 5%; top: 5%; 
+	display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 15px; transform: scale(0) rotateY(360deg); transition: all 1s;
+}
+.banner-r:hover .cover{
+	transform: scale(1) rotateY(0deg);
+}
+.hinh{
+	position: relative; overflow: hidden;
+}
+.icon{
+	position: absolute; height: 45px; width: 80%; display: flex; justify-content: space-around; left: 10%; top: 110%; transition: all 0.8s;
+}
+.icon a{
+	width: 45px; height: 45px; background-color: white; color: black; border-radius: 50%; display: flex; justify-content: center; align-items: center; text-decoration: none; 
+}
+.icon a:hover{
+	background-color: rgba(248,149,150,1.00); color: white;
+}
+.hinh:hover .icon{
+	top: 60%; 
+}
+#sp-men .owl-nav{
+	position: absolute; left: 0px; top: 35%; width: 100%;
+}
+#sp-men .owl-nav[class*='owl-']{
+	font-size: 40px; color: gray; 
+}
+#sp-men .owl-nav .owl-next{ position: absolute; right: -2%; }
+#sp-men .owl-nav .owl-prev{ position: absolute; left: -2%; }
+#sp-men .owl-nav [class*='owl-']:hover{
+	background: none; border: none;
+	color: black; text-decoration: none;
+}
+#sp-women .owl-nav{
+	position: absolute; left: 0px; top: 35%; width: 100%;
+}
+#sp-women .owl-nav[class*='owl-']{
+	font-size: 40px; color: gray; 
+}
+#sp-women .owl-nav .owl-next{ position: absolute; right: -2%; }
+#sp-women .owl-nav .owl-prev{ position: absolute; left: -2%; }
+#sp-women .owl-nav [class*='owl-']:hover{
+	background: none; border: none;
+	color: black; text-decoration: none;
+}
+#sp-kid .owl-nav{
+	position: absolute; left: 0px; top: 35%; width: 100%;
+}
+#sp-kid .owl-nav[class*='owl-']{
+	font-size: 40px; color: gray; 
+}
+#sp-kid .owl-nav .owl-next{ position: absolute; right: -2%; }
+#sp-kid .owl-nav .owl-prev{ position: absolute; left: -2%; }
+#sp-kid .owl-nav [class*='owl-']:hover{
+	background: none; border: none;
+	color: black; text-decoration: none;
+}
+#product .explore{
+	width: 100%; height: 100%; padding: 15px; background-color: #EEEEEE; text-align: center;
+	display: flex; flex-direction: column; justify-content: center; 
+}
+#media .img{
+	position: relative; overflow: hidden;
+}
+#media .img-cover{
+	position: absolute; width: 100%; height: 100%; background-color: black; color: white; left: 0; top: 105%; padding: 10px;
+	display: flex; flex-direction: column; justify-content: flex-end; transition: all 1s;
+}
+#media .img-cover a{
+	color: white; 
+}
+#media .img-cover a:hover{
+	color: red;
+}
+#media .img:hover .img-cover{
+	top: 0%; 
+}
+@media (max-width: 667px){
+	#media .img-cover{
+		display:none;
+	}
+}
+#contact a{ text-decoration: none; color: gray;}
+
+#page-header{
+	width: 100%; min-height: 400px; background: url( "../images/about-us-page-heading.jpg"); background-repeat: no-repeat; background-size: cover; background-position: center top; display: flex; justify-content: center; align-items: center; 
+}
+#page-header .caption{
+	width: 30%; text-align: center;
+}
+#page-header .caption h1{
+	font-size: 45px;
+}
+#about .social{
+	width: 100%; heihght: 45px; display: flex; margin-top: 20px; 
+}
+#about .box{
+	height: 45px; width: 45px; background-color: black; border-radius: 50%; margin-right: 15px; display: flex; justify-content: center; align-items: center; 
+}
+#about .box a{
+	color: white;
+}
+#about .box:hover{
+	background-color: whitesmoke;
+}
